@@ -1,8 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import Ship from './Ship'
+
+const Main = styled.div`
+  background-color: black;
+  background-size: 100%;
+`;
 
 const App = () => {
   return (
-    <div>Hello World!</div>
+    <Main>Hello World!
+      <Ship />
+    </Main>
   )
 }
 
