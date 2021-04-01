@@ -10,7 +10,7 @@ const HomePos = styled.div`
 `;
 
 const Home = (props) => {
-  if (props.display[0] === false) {
+  if (props.display === false) {
     return null;
   }
   return(

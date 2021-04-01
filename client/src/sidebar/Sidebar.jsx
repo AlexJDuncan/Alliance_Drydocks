@@ -14,11 +14,11 @@ const Card = styled.h3`
   margin-left: 20px;
 `;
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return(
     <CardsPos>
-    <Card>Game Ships</Card>
-    <Card>Weapons</Card>
+    <Card onClick={props.handleShipClick}>Game Ships</Card>
+    <Card onClick={props.handleWeaponClick}>Weapons</Card>
     <Card>Your Ship 1</Card>
     <Card>Your Ship 2</Card>
     <Card>Your Ship 3</Card>
