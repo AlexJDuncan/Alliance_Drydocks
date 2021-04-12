@@ -159,18 +159,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-MaralNhi - [@twitter_handle](https://twitter.com/MaralNhi)
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+MaralNhi - [@MaralNhi](https://twitter.com/MaralNhi)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
+<!--
 ## Acknowledgements
 
 * []()
 * []()
 * []()
+-->
 
 
 
