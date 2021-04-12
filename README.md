@@ -34,8 +34,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="./ReadmeImages/HomePage.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/monkeymedic26/Alliance_Drydocks/blob/main/ReadmeImages/HomePage.png">
+    <img src="./ReadmeImages/HomePage.png" alt="Home Page" width="240" height="160">
   </a>
 
   <h3 align="center">Alliance Drydocks</h3>
@@ -88,7 +88,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Alliance Drydocks]["./ReadmeImage/HomePage.png"]](https://github.com/monkeymedic26/Alliance_Drydocks/blob/main/ReadmeImages/HomePage.png)
+[![Alliance Drydocks]["./ReadmeImage/Ships.png"]](https://github.com/monkeymedic26/Alliance_Drydocks/blob/main/ReadmeImages/Ships.png)
+[![Alliance Drydocks]["./ReadmeImage/Ships.png"]](https://github.com/monkeymedic26/Alliance_Drydocks/blob/main/ReadmeImages/Ships.png)
+[![Alliance Drydocks]["./ReadmeImage/Ships.png"]](https://github.com/monkeymedic26/Alliance_Drydocks/blob/main/ReadmeImages/Ships.png)
+
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
