@@ -40,9 +40,7 @@
 
   <h3 align="center">Alliance Drydocks</h3>
   <p align="center">
-    This project is really a relatable project for me.  I am currently working on designing and building out a ship building web application for the game Star Trek Online which I am calling the Alliance Drydocks.  When completed you will be able to look up gear for your ingame ships and you will be able to add that gear to a ship to compare stats to gear the ship with the best gear according to your play style.
-
-    It is still in development at the moment.  I have not been able to find a good api for the project and am building out 10 years worth data on my own in order to create this app.  I plan to use MongoDB to store and use my data once I’ve written a good portion of it.  I plan to add a feature to the application where you can log in and save your builds too and those details will need to be persisted as well.
+    This project is really a relatable project for me.  I am currently working on designing and building out a ship building web application for the game Star Trek Online which I am calling the Alliance Drydocks.  When completed you will be able to look up gear for your ingame ships and you will be able to add that gear to a ship to compare stats to gear the ship with the best gear according to your play style.<br />It is still in development at the moment.  I have not been able to find a good api for the project and am building out 10 years worth data on my own in order to create this app.  I plan to use MongoDB to store and use my data once I’ve written a good portion of it.  I plan to add a feature to the application where you can log in and save your builds too and those details will need to be persisted as well.
   <!--
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
@@ -99,11 +97,11 @@ Here's a blank template to get started:
 
 ### Built With
 
-* [React]()
-* [Styled-Components]()
-* [Node.js]()
-* [Express]()
-* [Webpack]()
+* [React](https://reactjs.org/)
+* [Styled-Components](https://styled-components.com/)
+* [Node.js](https://nodejs.org/en/)
+* [Express](https://expressjs.com/)
+* [Webpack](https://webpack.js.org/)
 
 
 
