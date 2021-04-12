@@ -26,7 +26,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[linkedin-url]: [https://www.linkedin.com/in/alexjduncan/]
+![1]: [https://www.linkedin.com/in/alexjduncan/]
 
 
 
