@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const HomePos = styled.div`
   grid-column: 2/3;
   grid-row: 2/3;
-  color: white;
+  color: #ffce63;
   text-align: center;
   font-size: 20px;
 `;

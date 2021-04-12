@@ -8,20 +8,22 @@ const CardsPos =  styled.div`
 
 const Card = styled.h3`
   color: white;
-  border: 3px solid white;
   text-align: center;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #ff9c00;
 `;
 
 const Sidebar = (props) => {
   return(
     <CardsPos>
-    <Card onClick={props.handleShipClick}>Game Ships</Card>
-    <Card onClick={props.handleWeaponClick}>Weapons</Card>
-    <Card>Your Ship 1</Card>
-    <Card>Your Ship 2</Card>
-    <Card>Your Ship 3</Card>
+      <Card onClick={props.handleHomeClick}>Home</Card>
+      <Card onClick={props.handleShipClick}>Game Ships</Card>
+      <Card onClick={props.handleWeaponClick}>Weapons</Card>
+      <Card onClick={props.handleYourShipClick}>Your Ship 1</Card>
+      <Card>Your Ship 2</Card>
+      <Card>Your Ship 3</Card>
     </CardsPos>
   )
 }

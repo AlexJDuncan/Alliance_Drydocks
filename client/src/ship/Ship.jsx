@@ -16,7 +16,7 @@ const Img = styled.img`
 `;
 
 const Name = styled.h1`
-  color: white;
+  color: #ffce63;
   text-align: center;
 `;
 
@@ -30,37 +30,37 @@ const ShipDataGrid = styled.div`
 const Data1 = styled.div`
   grid-column: 1/2;
   grid-row: 1/2;
-  color: white;
+  color: #ffce63;
   font-size: 20px;
-  border: 2px solid white;
+  border: 2px solid #ff9c00;
   padding: 10px;
 `;
 
 const Data2 = styled.div`
-grid-column: 2/3;
-grid-row: 1/2;
-color: white;
-font-size: 20px;
-border: 2px solid white;
-padding: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: #ffce63;
+  font-size: 20px;
+  border: 2px solid #ff9c00;
+  padding: 10px;
 `;
 
 const Data3 = styled.div`
   grid-column: 1/2;
   grid-row: 2/3;
-  color: white;
+  color: #ffce63;
   font-size: 20px;
-  border: 2px solid white;
+  border: 2px solid #ff9c00;
   padding: 10px;
 `;
 
 const Data4 = styled.div`
-grid-column: 2/3;
-grid-row: 2/3;
-color: white;
-font-size: 20px;
-border: 2px solid white;
-padding: 10px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #ffce63;
+  font-size: 20px;
+  border: 2px solid #ff9c00;
+  padding: 10px;
 `;
 
 //* * Func/Render * *//
