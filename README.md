@@ -72,10 +72,10 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#opening the app">Opening the App</a></li>
+        <li><a href="#openingtheapp">Opening the App</a></li>
       </ul>
     </li>
-    <li><a href="#screenshots">screenshots</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
     <!--
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
