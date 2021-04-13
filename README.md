@@ -172,7 +172,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 <p>Twitter: [@MaralNhi](https://twitter.com/MaralNhi)</p>
-<p>Email: [monkeymedic26@gmail.com]</p>
+<p>Email: [monkeymedic26@gmail.com](monkeymedic26@gmail.com)</p>
 
 
 
