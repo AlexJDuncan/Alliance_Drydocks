@@ -72,7 +72,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#openingtheapp">Opening the App</a></li>
+        <li><a href="#open">Open</a></li>
       </ul>
     </li>
     <li><a href="#screenshots">Screenshots</a></li>
@@ -131,7 +131,7 @@ To get a local copy up and running follow these simple steps.
    npm run build
    ```
 
-### Opening the app
+### Open
 
 1. Start the server
    ```sh
