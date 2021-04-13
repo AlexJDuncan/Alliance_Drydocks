@@ -75,7 +75,7 @@
         <li><a href="#opening the app">Opening the App</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#screenshots">screenshots</a></li>
     <!--
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -144,12 +144,20 @@ To get a local copy up and running follow these simple steps.
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- SCREENSHOTS EXAMPLES -->
+## Screenshots
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Home Page
+<img src="./ReadmeImages/HomePage.png" alt="Home Page" />
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Game Ships
+<img src="./ReadmeImages/Ships.png" alt="Ships Page" />
+
+Weapons
+<img src="./ReadmeImages/Weapons.png" alt="Weapons Page" />
+
+Ship Builder
+<img src="./ReadmeImages/ShipBuilder.png" alt="Ship Builder Page" />
 
 
 
@@ -163,7 +171,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-MaralNhi - [@MaralNhi](https://twitter.com/MaralNhi)
+Twitter: [@MaralNhi](https://twitter.com/MaralNhi)
+Email: [monkeymedic26@gmail.com]
 
 
 
