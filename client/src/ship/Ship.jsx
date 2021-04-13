@@ -70,6 +70,9 @@ const Ship = (props) => {
     return null;
   }
   return(
+    <div>
+      <input type="search" />
+
     <ShipPos>
       <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
       <Img src={Ships[0].photo} alt="" />
@@ -94,10 +97,10 @@ const Ship = (props) => {
           Bonus Power:<br />
           {Ships[0].bonusPower.map((power, idx) => (
             <div key={idx}>&nbsp;{power}</div>
-          ))}
+            ))}
           Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
             <div key={idx}>&nbsp;{officer}</div>
-          ))}
+            ))}
         </Data2>
         <Data3>
           Weapons:<br />
@@ -119,7 +122,7 @@ const Ship = (props) => {
         <Data4>
           Abilities: {Ships[0].abilities.map((ability, idx) => (
             <div key={idx}>&nbsp;{ability}</div>
-          ))}
+            ))}
           Admirality Stats:<br />
           &nbsp;
           Tactical: {Ships[0].admiralityStats.tactical}<br />
@@ -130,12 +133,8 @@ const Ship = (props) => {
         </Data4>
       </ShipDataGrid>
     </ShipPos>
+  </div>
   )
 }
 
 export default Ship;
-// admiralityStats: {
-//   Tactical: 46,
-//   Engineering: 48,
-//   Science: 23,
-// },

@@ -171,8 +171,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Twitter: [@MaralNhi](https://twitter.com/MaralNhi)
-Email: [monkeymedic26@gmail.com]
+<p>Twitter: [@MaralNhi](https://twitter.com/MaralNhi)</p>
+<p>Email: [monkeymedic26@gmail.com]</p>
 
 
 
