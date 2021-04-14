@@ -37,6 +37,20 @@ const shipSchema = mongoose.Schema({
     photo: String,
 });
 
+const weaponSchema = mongoose.Schema({
+    name: String,
+    description: {
+      type: String,
+      arc: Number,
+      damage: String,
+      effects: [String],
+    bind: String,
+    restrictions: String,
+    rank: String,
+    photo: String,
+  },
+})
+
 const Ship = mongoose.model('Ship', shipSchema);
 
 module.exports = User;
