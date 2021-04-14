@@ -13,6 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use(express.static(PUBLIC_DIR));
 
+// app.get('/ships', (res, req) => {
+
+// })
+
 app.listen(PORT, () => {
   console.log(`server listening on localhost: ${PORT}`);
 });

@@ -17,7 +17,7 @@ const SearchInput = styled.input`
   margin-right: 60px;
 `;
 
-const SearchButton = styled.button`
+const SearchButton = styled.input`
   grid-column: 2/3;
   grid-row: 1/2;
   margin-left: 10px;

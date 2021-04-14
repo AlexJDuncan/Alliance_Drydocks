@@ -71,8 +71,6 @@ const Ship = (props) => {
     return null;
   }
   return(
-    <div>
-      <SearchBar />
       <ShipPos>
         <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
         <Img src={Ships[0].photo} alt="" />
@@ -133,7 +131,6 @@ const Ship = (props) => {
           </Data4>
         </ShipDataGrid>
       </ShipPos>
-    </div>
   )
 }
 
