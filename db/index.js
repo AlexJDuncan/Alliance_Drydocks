@@ -51,6 +51,22 @@ const weaponSchema = mongoose.Schema({
   },
 })
 
-const Ship = mongoose.model('Ship', shipSchema);
+const userSchema = ({
+  userName = String,
+  password = String,
+  userShips = [
+    {
+    buildName = String,
+    }
+  ],
+})
 
-module.exports = User;
+const Ship = mongoose.model('Ship', shipSchema);
+const Weapon = mongoose.model('Weapon', weaponSchema);
+const User = mongoose.model('User', userSchema)
+
+module.exports = {
+  Ship,
+  Weapon,
+  User
+};
