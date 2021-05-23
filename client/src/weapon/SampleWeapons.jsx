@@ -22,7 +22,7 @@ const weapons = [
     bind: "on pick-up",
     restrictions: "cannot equip more than 1 of this item",
     rank: "Rear Admiral, Upper Half",
-    photo: "https://i.ibb.co/7RP2sJG/Advanced-Inhibiting-Polaron-Heavy-Turret-icon.png",
+    photo: 'https://i.ibb.co/7RP2sJG/Advanced-Inhibiting-Polaron-Heavy-Turret-icon.png',
     },
   },
   {

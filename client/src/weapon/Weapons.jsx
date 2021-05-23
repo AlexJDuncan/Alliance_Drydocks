@@ -42,14 +42,14 @@ const Weapon = (props) => {
     return null;
   }
   return(
-    <WeaponPos>
+    <WeaponPos key="weapon">
       {weapons.map((weapon, idx) => (
-        <WeaponTableGrid>
-          <WeaponTable1>
+        <WeaponTableGrid key={idx}>
+          <WeaponTable1 key={"weapon" + idx}>
             {weapon.name}
           </WeaponTable1>
-          <WeaponImg src={weapon.photo}/>
-          <WeaponTable2>
+          <WeaponImg src={weapon.description.photo} alt="" key={"image" + idx}/>
+          <WeaponTable2 key={"table2" + idx}>
             Type: {weapon.description.type}<br />
             Arc: {weapon.description.arc}<br />
             Damage: {weapon.description.damage}<br />
