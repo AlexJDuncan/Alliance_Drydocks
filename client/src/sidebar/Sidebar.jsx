@@ -13,6 +13,10 @@ const Card = styled.h3`
   margin-left: 10px;
   margin-right: 10px;
   background-color: #ff9c00;
+
+  ${CardsPos}:hover & {
+    cursor: pointer;
+  }
 `;
 
 const Sidebar = (props) => {
