@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Ships from '../ship/SampleShips';
+import weapons from '../weapon/SampleWeapons';
 
 const ShipPos = styled.div`
   display: grid;
@@ -58,7 +59,11 @@ const YourShip = (props) => {
       <ImagePos src={Ships[0].photo} />
         <SelectPos1>
           Fore Weapons:<br />
-          <Select />
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
           <Select />
           <Select />
           <Select /><br />
