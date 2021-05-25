@@ -64,14 +64,42 @@ const YourShip = (props) => {
               <option>{weapon.name}</option>
             ))}
           </Select>
-          <Select />
-          <Select />
-          <Select /><br />
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select><br />
           Aft Weapons:<br />
-          <Select />
-          <Select />
-          <Select />
-          <Select /><br />
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select>
+          <Select>
+            {weapons.map((weapon, idx) => (
+              <option>{weapon.name}</option>
+            ))}
+          </Select><br />
           Device Slots:<br />
           <Select />
         </SelectPos1>
