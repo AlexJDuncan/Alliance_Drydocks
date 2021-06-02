@@ -6,25 +6,22 @@ import SearchBar from '../SearchBar/SearchBar';
 //* * Styleguides * *//
 
 const ShipPos = styled.div`
-  grid-column: 2/3;
-  grid-row: 2/3;
   justify-self: center
 `;
 
 const Img = styled.img`
-  height: 418px;
-  width: 800px;
+  width: 22rem;
 `;
 
-const Name = styled.h1`
+const Name = styled.h2`
   color: #ffce63;
   text-align: center;
 `;
 
 const ShipDataGrid = styled.div`
   display: grid;
-  grid-template-columns: 25rem 25rem;
-  grid-template-rows: 18rem 15rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
 `;
 
@@ -32,36 +29,24 @@ const Data1 = styled.div`
   grid-column: 1/2;
   grid-row: 1/2;
   color: #ffce63;
-  font-size: 20px;
-  border: 2px solid #ff9c00;
-  padding: 10px;
 `;
 
 const Data2 = styled.div`
   grid-column: 2/3;
   grid-row: 1/2;
   color: #ffce63;
-  font-size: 20px;
-  border: 2px solid #ff9c00;
-  padding: 10px;
 `;
 
 const Data3 = styled.div`
   grid-column: 1/2;
   grid-row: 2/3;
   color: #ffce63;
-  font-size: 20px;
-  border: 2px solid #ff9c00;
-  padding: 10px;
 `;
 
 const Data4 = styled.div`
   grid-column: 2/3;
   grid-row: 2/3;
   color: #ffce63;
-  font-size: 20px;
-  border: 2px solid #ff9c00;
-  padding: 10px;
 `;
 
 //* * Func/Render * *//
@@ -72,10 +57,14 @@ const Ship = (props) => {
   }
   return(
       <ShipPos>
-        <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
-        <Img src={Ships[0].photo} alt="" />
         <ShipDataGrid>
           <Data1>
+          <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
+          </Data1>
+          <Data3>
+            <Img src={Ships[0].photo} alt="" />
+          </Data3>
+          <Data2>
             Type: {Ships[0].type}<br />
             Hull<br />
             &nbsp;
@@ -90,17 +79,6 @@ const Ship = (props) => {
             Impulse Modifier: {Ships[0].impulseModifier}<br />
             Inertia Rating: {Ships[0].inertiaRating}<br />
             Warp Core: {Ships[0].warpCore}
-          </Data1>
-          <Data2>
-            Bonus Power:<br />
-            {Ships[0].bonusPower.map((power, idx) => (
-              <div key={idx}>&nbsp;{power}</div>
-              ))}
-            Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
-              <div key={idx}>&nbsp;{officer}</div>
-              ))}
-          </Data2>
-          <Data3>
             Weapons:<br />
             &nbsp;
             Fore: {Ships[0].weapons.fore}<br />
@@ -116,8 +94,15 @@ const Ship = (props) => {
             Science: {Ships[0].consoles.science}<br />
             &nbsp;
             Universal: {Ships[0].consoles.universal}<br />
-          </Data3>
+          </Data2>
           <Data4>
+            Bonus Power:<br />
+            {Ships[0].bonusPower.map((power, idx) => (
+              <div key={idx}>&nbsp;{power}</div>
+              ))}
+            Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
+              <div key={idx}>&nbsp;{officer}</div>
+              ))}
             Abilities: {Ships[0].abilities.map((ability, idx) => (
               <div key={idx}>&nbsp;{ability}</div>
               ))}
