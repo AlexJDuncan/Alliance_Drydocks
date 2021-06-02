@@ -6,7 +6,10 @@ import SearchBar from '../SearchBar/SearchBar';
 //* * Styleguides * *//
 
 const ShipPos = styled.div`
-  justify-self: center
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #ffce63;
+  text-align: center
 `;
 
 const Img = styled.img`
@@ -23,6 +26,7 @@ const ShipDataGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
+  margin: 20px;
 `;
 
 const Data1 = styled.div`
@@ -35,6 +39,7 @@ const Data2 = styled.div`
   grid-column: 2/3;
   grid-row: 1/2;
   color: #ffce63;
+  font-size: 1rem;
 `;
 
 const Data3 = styled.div`
@@ -47,6 +52,7 @@ const Data4 = styled.div`
   grid-column: 2/3;
   grid-row: 2/3;
   color: #ffce63;
+  font-size: 1rem;
 `;
 
 //* * Func/Render * *//
