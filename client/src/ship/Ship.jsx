@@ -23,9 +23,10 @@ const Name = styled.h2`
 
 const ShipDataGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
+  text-align: left;
   margin: 20px;
 `;
 
@@ -50,6 +51,20 @@ const Data3 = styled.div`
 
 const Data4 = styled.div`
   grid-column: 2/3;
+  grid-row: 2/3;
+  color: #ffce63;
+  font-size: 1rem;
+`;
+
+const Data5 = styled.div`
+  grid-column: 3/4;
+  grid-row: 1/2;
+  color: #ffce63;
+  font-size: 1rem;
+`;
+
+const Data6 = styled.div`
+  grid-column: 3/4;
   grid-row: 2/3;
   color: #ffce63;
   font-size: 1rem;
@@ -85,6 +100,8 @@ const Ship = (props) => {
             Impulse Modifier: {Ships[0].impulseModifier}<br />
             Inertia Rating: {Ships[0].inertiaRating}<br />
             Warp Core: {Ships[0].warpCore}
+          </Data2>
+          <Data5>
             Weapons:<br />
             &nbsp;
             Fore: {Ships[0].weapons.fore}<br />
@@ -100,7 +117,7 @@ const Ship = (props) => {
             Science: {Ships[0].consoles.science}<br />
             &nbsp;
             Universal: {Ships[0].consoles.universal}<br />
-          </Data2>
+          </Data5>
           <Data4>
             Bonus Power:<br />
             {Ships[0].bonusPower.map((power, idx) => (
@@ -109,6 +126,8 @@ const Ship = (props) => {
             Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
               <div key={idx}>&nbsp;{officer}</div>
               ))}
+          </Data4>
+          <Data6>
             Abilities: {Ships[0].abilities.map((ability, idx) => (
               <div key={idx}>&nbsp;{ability}</div>
               ))}
@@ -119,7 +138,7 @@ const Ship = (props) => {
             Engineering: {Ships[0].admiralityStats.engineering}<br />
             &nbsp;
             Science: {Ships[0].admiralityStats.science}
-          </Data4>
+          </Data6>
         </ShipDataGrid>
       </ShipPos>
   )
