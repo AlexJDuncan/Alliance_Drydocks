@@ -87,12 +87,12 @@ const Ship = (props) => {
           </Data3>
           <Data2>
             Type: {Ships[0].type}<br />
-            Hull<br />
-            &nbsp;
+            Hull:<br />
+            &nbsp; &nbsp;
             lvl-50: {Ships[0].hull.lvl50}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             lvl-60: {Ships[0].hull.lvl60}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             lvl-65: {Ships[0].hull.lvl65}<br />
             Hull Modifier: {Ships[0].hullModifier}<br />
             Shield Modifier: {Ships[0].shieldModifier}<br />
@@ -103,40 +103,40 @@ const Ship = (props) => {
           </Data2>
           <Data5>
             Weapons:<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Fore: {Ships[0].weapons.fore}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Aft: {Ships[0].weapons.aft}<br />
             Device Slots: {Ships[0].deviceSlots}<br />
             Consoles:<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Tactical: {Ships[0].consoles.tactical}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Engineering: {Ships[0].consoles.engineering}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Science: {Ships[0].consoles.science}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Universal: {Ships[0].consoles.universal}<br />
           </Data5>
           <Data4>
             Bonus Power:<br />
             {Ships[0].bonusPower.map((power, idx) => (
-              <div key={idx}>&nbsp;{power}</div>
+              <div key={idx}>&nbsp; &nbsp;{power}</div>
               ))}
             Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
-              <div key={idx}>&nbsp;{officer}</div>
+              <div key={idx}>&nbsp; &nbsp;{officer}</div>
               ))}
           </Data4>
           <Data6>
             Abilities: {Ships[0].abilities.map((ability, idx) => (
-              <div key={idx}>&nbsp;{ability}</div>
+              <div key={idx}>&nbsp; &nbsp;{ability}</div>
               ))}
             Admirality Stats:<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Tactical: {Ships[0].admiralityStats.tactical}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Engineering: {Ships[0].admiralityStats.engineering}<br />
-            &nbsp;
+            &nbsp; &nbsp;
             Science: {Ships[0].admiralityStats.science}
           </Data6>
         </ShipDataGrid>
