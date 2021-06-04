@@ -34,6 +34,7 @@ const Data1 = styled.div`
   grid-column: 1/2;
   grid-row: 1/2;
   color: #ffce63;
+  text-align: center;
 `;
 
 const Data2 = styled.div`
@@ -80,11 +81,9 @@ const Ship = (props) => {
       <ShipPos>
         <ShipDataGrid>
           <Data1>
-          <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
-          </Data1>
-          <Data3>
+            <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
             <Img src={Ships[0].photo} alt="" />
-          </Data3>
+          </Data1>
           <Data2>
             Type: {Ships[0].type}<br />
             Hull:<br />
