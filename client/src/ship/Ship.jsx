@@ -13,7 +13,7 @@ const ShipPos = styled.div`
 `;
 
 const Img = styled.img`
-  width: 22rem;
+  width: auto;
 `;
 
 const Name = styled.h2`
@@ -24,7 +24,7 @@ const Name = styled.h2`
 const ShipDataGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   text-align: left;
   margin: 20px;
@@ -32,41 +32,18 @@ const ShipDataGrid = styled.div`
 
 const Data1 = styled.div`
   grid-column: 1/2;
-  grid-row: 1/2;
   color: #ffce63;
   text-align: center;
 `;
 
 const Data2 = styled.div`
   grid-column: 2/3;
-  grid-row: 1/2;
-  color: #ffce63;
-  font-size: 1rem;
-`;
-
-const Data3 = styled.div`
-  grid-column: 1/2;
-  grid-row: 2/3;
-  color: #ffce63;
-`;
-
-const Data4 = styled.div`
-  grid-column: 2/3;
-  grid-row: 2/3;
   color: #ffce63;
   font-size: 1rem;
 `;
 
 const Data5 = styled.div`
   grid-column: 3/4;
-  grid-row: 1/2;
-  color: #ffce63;
-  font-size: 1rem;
-`;
-
-const Data6 = styled.div`
-  grid-column: 3/4;
-  grid-row: 2/3;
   color: #ffce63;
   font-size: 1rem;
 `;
@@ -99,6 +76,13 @@ const Ship = (props) => {
             Impulse Modifier: {Ships[0].impulseModifier}<br />
             Inertia Rating: {Ships[0].inertiaRating}<br />
             Warp Core: {Ships[0].warpCore}
+            Bonus Power:<br />
+            {Ships[0].bonusPower.map((power, idx) => (
+              <div key={idx}>&nbsp; &nbsp;{power}</div>
+              ))}
+            Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
+              <div key={idx}>&nbsp; &nbsp;{officer}</div>
+              ))}
           </Data2>
           <Data5>
             Weapons:<br />
@@ -116,17 +100,6 @@ const Ship = (props) => {
             Science: {Ships[0].consoles.science}<br />
             &nbsp; &nbsp;
             Universal: {Ships[0].consoles.universal}<br />
-          </Data5>
-          <Data4>
-            Bonus Power:<br />
-            {Ships[0].bonusPower.map((power, idx) => (
-              <div key={idx}>&nbsp; &nbsp;{power}</div>
-              ))}
-            Bridge Officers: {Ships[0].bridgeOfficers.map((officer, idx) => (
-              <div key={idx}>&nbsp; &nbsp;{officer}</div>
-              ))}
-          </Data4>
-          <Data6>
             Abilities: {Ships[0].abilities.map((ability, idx) => (
               <div key={idx}>&nbsp; &nbsp;{ability}</div>
               ))}
@@ -137,7 +110,7 @@ const Ship = (props) => {
             Engineering: {Ships[0].admiralityStats.engineering}<br />
             &nbsp; &nbsp;
             Science: {Ships[0].admiralityStats.science}
-          </Data6>
+          </Data5>
         </ShipDataGrid>
       </ShipPos>
   )
