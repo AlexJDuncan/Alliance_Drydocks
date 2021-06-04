@@ -23,7 +23,7 @@ const Name = styled.h2`
 
 const ShipDataGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 650px 400px 350px;
   grid-template-rows: 1fr;
   justify-content: center;
   text-align: left;
@@ -39,19 +39,19 @@ const Data1 = styled.div`
 const Data2 = styled.div`
   grid-column: 2/3;
   color: #ffce63;
-  font-size: 1rem;
-  margin-top: 22px;
+  margin-top: 7px;
   line-height: 1.5rem;
   font-size: 1.15rem;
+  padding: 15px;
 `;
 
 const Data5 = styled.div`
   grid-column: 3/4;
   color: #ffce63;
-  font-size: 1rem;
-  margin-top: 22px;
+  margin-top: 7px;
   line-height: 1.5rem;
   font-size: 1.15rem;
+  padding: 15px;
 `;
 
 //* * Func/Render * *//
