@@ -40,12 +40,18 @@ const Data2 = styled.div`
   grid-column: 2/3;
   color: #ffce63;
   font-size: 1rem;
+  margin-top: 22px;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
 `;
 
 const Data5 = styled.div`
   grid-column: 3/4;
   color: #ffce63;
   font-size: 1rem;
+  margin-top: 22px;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
 `;
 
 //* * Func/Render * *//
@@ -75,7 +81,7 @@ const Ship = (props) => {
             Turn Rate: {Ships[0].turnRate}<br />
             Impulse Modifier: {Ships[0].impulseModifier}<br />
             Inertia Rating: {Ships[0].inertiaRating}<br />
-            Warp Core: {Ships[0].warpCore}
+            Warp Core: {Ships[0].warpCore}<br />
             Bonus Power:<br />
             {Ships[0].bonusPower.map((power, idx) => (
               <div key={idx}>&nbsp; &nbsp;{power}</div>
