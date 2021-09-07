@@ -26,7 +26,7 @@ const LeftLine = styled.div`
   height: 25px;
   width: 100px;
   margin-left: 12rem;
-  padding: 10px;
+  padding: 7.5px;
   background-color: #ff9c00;
 `;
 
