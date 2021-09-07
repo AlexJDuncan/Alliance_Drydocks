@@ -6,7 +6,7 @@ const Logo = styled.div`
   font-weight: 600;
   font-size: 3rem;
   margin-left: 25px;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 25px;
 `;
 
@@ -30,12 +30,22 @@ const LeftLine = styled.div`
   background-color: #ff9c00;
 `;
 
+const RightLine = styled.div`
+  display: inline-block;
+  height: 25px;
+  width: 53%;
+  margin-left: 25px;
+  padding: 7.5px;
+  background-color: #ff9c00;
+`;
+
 const TopBar = () => {
   return(
     <TopBarPos>
       <LeftLine />
       <Logo>AD</Logo>
       <Title>Alliance Drydocks</Title>
+      <RightLine />
     </TopBarPos>
   )
 }
