@@ -5,7 +5,7 @@ const Logo = styled.div`
   display: inline-block;
   font-weight: 600;
   font-size: 3rem;
-  margin-left: 10rem;
+  margin-left: 25px;
   margin-right: 50px;
   margin-top: 25px;
 `;
@@ -19,12 +19,21 @@ const TopBarPos = styled.div`
   grid-column: 1/3;
   grid-row: 1/2;
   color: #ffce63;
-  background-color: #848484;
+`;
+
+const LeftLine = styled.div`
+  display: inline-block;
+  height: 25px;
+  width: 100px;
+  margin-left: 12rem;
+  padding: 10px;
+  background-color: #ff9c00;
 `;
 
 const TopBar = () => {
   return(
     <TopBarPos>
+      <LeftLine />
       <Logo>AD</Logo>
       <Title>Alliance Drydocks</Title>
     </TopBarPos>
