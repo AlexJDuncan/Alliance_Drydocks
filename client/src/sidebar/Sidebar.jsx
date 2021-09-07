@@ -19,6 +19,15 @@ const Card = styled.h3`
   }
 `;
 
+const Line = styled.div`
+  background-color: #ff9c00;
+  height: 100%;
+  width: 25px;
+  padding: 10px;
+  margin-left: 95px;
+  margin-right: 10px;
+`;
+
 const Sidebar = (props) => {
   return(
     <CardsPos>
@@ -28,6 +37,7 @@ const Sidebar = (props) => {
       <Card onClick={props.handleYourShipClick}>Your Ship 1</Card>
       <Card>Your Ship 2</Card>
       <Card>Your Ship 3</Card>
+      <Line />
     </CardsPos>
   )
 }
