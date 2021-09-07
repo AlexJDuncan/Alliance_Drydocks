@@ -19,7 +19,17 @@ const Card = styled.h3`
   }
 `;
 
-const Line = styled.div`
+const TopLine = styled.div`
+  background-color: #ff9c00;
+  height: 100px;
+  width: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 95px;
+  margin-right: 10px;
+`;
+
+const BottomLine = styled.div`
   background-color: #ff9c00;
   height: 100%;
   width: 25px;
@@ -31,13 +41,14 @@ const Line = styled.div`
 const Sidebar = (props) => {
   return(
     <CardsPos>
+      <TopLine />
       <Card onClick={props.handleHomeClick}>Home</Card>
       <Card onClick={props.handleShipClick}>Game Ships</Card>
       <Card onClick={props.handleWeaponClick}>Weapons</Card>
       <Card onClick={props.handleYourShipClick}>Your Ship 1</Card>
       <Card>Your Ship 2</Card>
       <Card>Your Ship 3</Card>
-      <Line />
+      <BottomLine />
     </CardsPos>
   )
 }
