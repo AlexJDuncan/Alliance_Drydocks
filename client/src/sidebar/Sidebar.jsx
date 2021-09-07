@@ -7,7 +7,7 @@ const CardsPos =  styled.div`
 `;
 
 const Card = styled.h3`
-  color: white;
+  color: #ff9c00;
   text-align: center;
   padding: 10px;
   margin-left: 10px;
@@ -18,6 +18,8 @@ const Card = styled.h3`
 
   ${CardsPos}:hover & {
     cursor: pointer;
+    color: white;
+    border-color: white;
   }
 `;
 
