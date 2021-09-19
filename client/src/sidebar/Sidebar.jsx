@@ -16,7 +16,7 @@ const Card = styled.h3`
   border-style: solid;
   border-color: #ff9c00;
 
-  ${CardsPos}:hover & {
+  &:hover {
     cursor: pointer;
     color: white;
     border-color: white;
