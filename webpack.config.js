@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(SRC_DIR, 'index.jsx'),
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js',
   },
 

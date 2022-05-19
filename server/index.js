@@ -4,7 +4,7 @@ const path = require('path');
 const axios = require('axios');
 
 const PORT = 8000;
-const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
+const PUBLIC_DIR = path.resolve(__dirname, '..', 'docs');
 
 const app = express();
 
