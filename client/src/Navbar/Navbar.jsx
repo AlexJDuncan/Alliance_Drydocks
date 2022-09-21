@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 const Card = styled(Link)`
   display: block;
   color: #ff9c00;
+  font-size: 1.5rem;
   text-align: center;
   padding: 10px;
   margin-top: 10px;
@@ -23,7 +24,7 @@ const Card = styled(Link)`
   }
 `;
 
-const Sidebar = () => {
+const Navbar = () => {
   return(
     <Container sx={{ textAlign: 'center' }}>
       <Card to="/" style={{ display: 'inline-block' }}>Home</ Card>
@@ -36,4 +37,4 @@ const Sidebar = () => {
   );
 }
 
-export default Sidebar;
+export default Navbar;

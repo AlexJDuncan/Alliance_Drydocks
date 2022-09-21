@@ -5,7 +5,7 @@ import Ship from './ship/Ship';
 import Weapon from './weapon/Weapons';
 import YourShip from './yourShip/YourShip';
 import TopBar from './topbar/TopBar';
-import Sidebar from './sidebar/Sidebar';
+import Navbar from './Navbar/Navbar';
 
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <TopBar />
-      <Sidebar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/ships" element={<Ship />} />
