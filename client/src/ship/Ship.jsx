@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Ships from './SampleShips';
 import SearchBar from '../SearchBar/SearchBar';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import { Typography } from '@mui/material/Typography';
 
 //* * Styleguides * *//
 
@@ -61,8 +64,11 @@ const Ship = (props) => {
     return null;
   }
   return(
-      <ShipPos>
-        <ShipDataGrid>
+      <Card sx={{ width: 600 + "px", height: 350 + "px" }}>
+        <CardContent>
+          <img src={Ships[0].photo} alt="" style={{ width: "-webkit-fill-available"}} />
+          <Typography>{Ships[0].name}</Typography>
+        {/* <ShipDataGrid>
           <Data1>
             <Name>{Ships[0].name} - Tier {Ships[0].tier}</Name>
             <Img src={Ships[0].photo} alt="" />
@@ -117,8 +123,9 @@ const Ship = (props) => {
             &nbsp; &nbsp;
             Science: {Ships[0].admiralityStats.science}
           </Data5>
-        </ShipDataGrid>
-      </ShipPos>
+        </ShipDataGrid> */}
+        </CardContent>
+      </Card>
   )
 }
 
