@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
-const CardsPos =  styled.div`
-  grid-column: 1/2;
-  grid-row: 2/3;
-`;
+import Container from '@mui/material/Container';
 
 const Card = styled(Link)`
   display: block;
@@ -27,37 +23,16 @@ const Card = styled(Link)`
   }
 `;
 
-const TopLine = styled.div`
-  background-color: #ff9c00;
-  height: 100px;
-  width: 25px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 95px;
-  margin-right: 10px;
-`;
-
-const BottomLine = styled.div`
-  background-color: #ff9c00;
-  height: 100%;
-  width: 25px;
-  padding: 10px;
-  margin-left: 95px;
-  margin-right: 10px;
-`;
-
-const Sidebar = (props) => {
+const Sidebar = () => {
   return(
-    <CardsPos>
-      <TopLine />
-      <Card to="/">Home</ Card>
-      <Card to="/ships">Game Ships</ Card>
-      <Card to="/weapons">Weapons</Card>
-      <Card to="/yourship">Your Ship 1</Card>
-      <Card>Your Ship 2</Card>
-      <Card>Your Ship 3</Card>
-      <BottomLine />
-    </CardsPos>
+    <Container sx={{ textAlign: 'center' }}>
+      <Card to="/" style={{ display: 'inline-block' }}>Home</ Card>
+      <Card to="/ships" style={{ display: 'inline-block' }}>Game Ships</ Card>
+      <Card to="/weapons" style={{ display: 'inline-block' }}>Weapons</Card>
+      <Card to="/yourship" style={{ display: 'inline-block' }}>Your Ship 1</Card>
+      <Card style={{ display: 'inline-block' }}>Your Ship 2</Card>
+      <Card style={{ display: 'inline-block' }}>Your Ship 3</Card>
+    </Container>
   );
 }
 
