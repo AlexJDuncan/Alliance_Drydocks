@@ -10,9 +10,6 @@ const HomePos = styled.div`
 `;
 
 const Home = (props) => {
-  if (props.display === false) {
-    return null;
-  }
   return(
     <HomePos>
       <h1>Welcome to the Alliance Drydocks!!</h1>
