@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Route, Routes, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from './home/Home';
 import Ship from './ship/Ship';
@@ -16,56 +17,19 @@ const Main = styled.div`
 `;
 
 const App = () => {
-  //* * States * *//
-  const [display1, setDisplay1] = useState(false);
-  const [display2, setDisplay2] = useState(false);
-  const [display3, setDisplay3] = useState(true);
-  const [display4, setDisplay4] = useState(false);
-
-  //* * Click Handlers * *//
-  const handleHomeClick = () => {
-    setDisplay2(false);
-    setDisplay1(false);
-    setDisplay3(true);
-    setDisplay4(false);
-  }
-
-  const handleShipClick = () => {
-    setDisplay2(false);
-    setDisplay1(true);
-    setDisplay3(false);
-    setDisplay4(false);
-  }
-
-  const handleWeaponClick = () => {
-    setDisplay2(true);
-    setDisplay1(false);
-    setDisplay3(false);
-    setDisplay4(false);
-  }
-
-  const handleYourShipClick = () => {
-    setDisplay2(false);
-    setDisplay1(false);
-    setDisplay3(false);
-    setDisplay4(true);
-  }
 
   return (
     <Main>
       <TopBar />
-      <Sidebar
-      handleHomeClick={handleHomeClick}
-      handleShipClick={handleShipClick}
-      handleWeaponClick={handleWeaponClick}
-      handleYourShipClick={handleYourShipClick}
-      />
-      <Home display={display3} />
-      <Ship display={display1} />
-      <Weapon display={display2} />
-      <YourShip display={display4} />
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/ships" element={<Ship />} />
+        <Route path="/weapons" element={<Weapon />} />
+        <Route path="/yourship" element={<YourShip />} />
+      </Routes>
     </Main>
-  )
-}
+  );
+};
 
 export default App;
