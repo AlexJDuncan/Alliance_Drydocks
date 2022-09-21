@@ -44,7 +44,7 @@ const Weapon = (props) => {
   return(
     <WeaponPos key="weapon">
       {weapons.map((weapon, idx) => (
-        <WeaponTableGrid key={idx}>
+        <WeaponTableGrid key={weapon.name + idx}>
           <WeaponTable1 key={"weapon" + idx}>
             {weapon.name}
           </WeaponTable1>
